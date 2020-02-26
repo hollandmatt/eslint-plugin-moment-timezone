@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-moment-timezone",
+  "version": "0.0.0",
+  "description": "Enforce usage of moment-timezone instead of plain moment",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Jane Team",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "mocha": "^3.1.2",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
