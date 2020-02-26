@@ -7,7 +7,7 @@
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Matt Holland",
+  "author": "Matt Holland <hollandmatt@gmail.com> (http://mattholland.info/)",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
