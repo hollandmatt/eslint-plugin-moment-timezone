@@ -17,6 +17,15 @@ ruleTester.run('use-moment-timezone', rule, {
     {
       code: "import moment from 'moment-timezone'",
     },
+    {
+      code: "const moment = require('moment-timezone')",
+    },
+    {
+      code: "let moment = require('moment-timezone')",
+    },
+    {
+      code: "var moment = require('moment-timezone')",
+    },
   ],
   invalid: [
     {
@@ -25,6 +34,33 @@ ruleTester.run('use-moment-timezone', rule, {
         {
           message: ERROR_MSG,
           type: 'ImportDeclaration',
+        },
+      ],
+    },
+    {
+      code: "const moment = require('moment')",
+      errors: [
+        {
+          message: ERROR_MSG,
+          type: 'VariableDeclaration',
+        },
+      ],
+    },
+    {
+      code: "let moment = require('moment')",
+      errors: [
+        {
+          message: ERROR_MSG,
+          type: 'VariableDeclaration',
+        },
+      ],
+    },
+    {
+      code: "var moment = require('moment')",
+      errors: [
+        {
+          message: ERROR_MSG,
+          type: 'VariableDeclaration',
         },
       ],
     },
