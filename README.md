@@ -43,3 +43,4 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * `use-moment-timezone`: Ensure that `moment-timezone` is imported instead of plain `moment`.
+* `moment-no-utc`: Prevent use of `moment.utc()` for timezone-aware code.
