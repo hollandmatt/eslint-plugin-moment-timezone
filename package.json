@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-moment-timezone",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Enforce usage of moment-timezone instead of plain moment",
   "keywords": [
     "eslint",
